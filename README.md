@@ -16,7 +16,7 @@ To get started developing a plugin, it's easiest to use the `bmwp` CLI.
 With it installed, place yourself in the plugins folder and run: `bmwp create:plugin plugin-name`, replacing plugin-name with your desired folder name. You will then be asked a
 series of setup questions.
 
-After running it, remove this setion from the README and update it to be more specific about the plugin project.
+After running it, remove this section from the README and update it to be more specific about the plugin project.
 
 ## Development How-tos
 

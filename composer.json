@@ -9,13 +9,9 @@
   "prefer-stable": true,
   "minimum-stability": "dev",
   "require": {
-    "php": "^7.4|^8.0",
-    "bernskioldmedia/wp-plugin-base": "^2.4.0",
-    "composer/installers": "~1.0"
+    "php": "^8.0"
   },
-  "require-dev": {
-    "bernskioldmedia/bm-wp-devtools": "dev-main"
-  },
+  "require-dev": {},
   "license": "GPL-3.0+",
   "authors": [
     {
@@ -26,10 +22,7 @@
   "autoload": {
     "psr-4": {
       "BernskioldMedia\\WP\\PluginScaffold\\": "src/"
-    },
-    "classmap": [
-      "vendor_prefixed/"
-    ]
+    }
   },
   "scripts": {
     "lint": "php-cs-fixer fix -v",
@@ -41,13 +34,7 @@
       "@test:types"
     ],
     "build": [
-      "composer prefix-dependencies",
       "composer dump-autoload"
-    ],
-    "prefix-dependencies": [
-      "composer require humbug/php-scoper:dev-master --dev -W",
-      "php ./vendor/humbug/php-scoper/bin/php-scoper add-prefix --prefix=WPPS_Vendor --config config/php-scoper/bm-wp-plugin-base.php --output-dir vendor_prefixed/bernskioldmedia/wp-plugin-base --force",
-      "composer remove humbug/php-scoper --dev"
     ]
   }
 }
