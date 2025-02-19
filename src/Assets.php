@@ -10,7 +10,7 @@
 
 namespace BernskioldMedia\WP\PluginScaffold;
 
-use WPPS_Vendor\BernskioldMedia\WP\PluginBase\AssetManager;
+use BernskioldMedia\WP\PluginScaffold\Framework\AssetManager;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

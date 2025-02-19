@@ -7,7 +7,7 @@
 
 namespace BernskioldMedia\WP\PluginScaffold;
 
-use WPPS_Vendor\BernskioldMedia\WP\PluginBase\Installer;
+use BernskioldMedia\WP\PluginScaffold\Framework\Installer;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

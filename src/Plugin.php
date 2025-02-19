@@ -2,13 +2,15 @@
 
 namespace BernskioldMedia\WP\PluginScaffold;
 
-use WPPS_Vendor\BernskioldMedia\WP\PluginBase\BasePlugin;
+use BernskioldMedia\WP\PluginScaffold\Framework\BasePlugin;
+use BernskioldMedia\WP\PluginScaffold\Framework\Blocks\Has_Blocks;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 class Plugin extends BasePlugin {
+	use Has_Blocks;
 
 	protected static string $slug             = 'wp_plugin_scaffold';
 	protected static string $version          = 'VERSION';
