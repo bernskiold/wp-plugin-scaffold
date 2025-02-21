@@ -1,4 +1,0 @@
-assets/scripts/dist/**/*.js
-assets/scripts/vendor
-assets/scripts/dist
-webpack.config.js

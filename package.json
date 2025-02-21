@@ -1,40 +1,32 @@
 {
-  "name": "wp-plugin-scaffold",
-  "private": true,
-  "version": "1.0.0",
-  "description": "A WordPress plugin scaffold that we use at Bernskiold Media when developing client specific plugins.",
-  "main": "assets/scripts/src/index.js",
-  "scripts": {
-    "release": "npm install && composer install --no-dev -o && npm run build",
-    "setup": "npm install && composer install && npm run build",
-    "build": "wp-scripts build",
-    "dev": "wp-scripts start",
-    "i18n": "npm run i18n:pot",
-    "i18n:pot": "npm run build && wp i18n make-pot . ./languages/wp-plugin-scaffold.pot --include=\"assets/scripts/dist/,src/\"",
-    "i18n:makejed": "wp i18n make-json languages --no-purge",
-    "check-engines": "wp-scripts check-engines",
-    "check-licenses": "wp-scripts check-licenses",
-    "format": "npm run format ./assets/scripts/src",
-    "lint:css": "wp-scripts lint-style",
-    "lint:js": "wp-scripts lint-js",
-    "lint:md:docs": "wp-scripts lint-md-docs",
-    "lint:md:js": "wp-scripts lint-md-js",
-    "lint:pkg-json": "wp-scripts lint-pkg-json",
-    "packages-update": "wp-scripts packages-update"
-  },
-  "author": {
-    "name": "Bernskiold Media",
-    "email": "info@bernskioldmedia.com",
-    "url": "https://bernskioldmedia.com",
-    "role": "developer"
-  },
-  "devDependencies": {
-    "@wordpress/eslint-plugin": "^9.2.0",
-    "@wordpress/scripts": "^19.0.0",
-    "fast-glob": "^3.2.7",
-    "path": "^0.12.7",
-    "replace-in-file-webpack-plugin": "^1.0.6",
-    "webpackbar": "^5.0.0-3",
-    "eslint": "^8.1.0"
-  }
+	"name": "wp-plugin-scaffold",
+	"private": true,
+	"version": "1.0.0",
+	"description": "A WordPress plugin scaffold that we use at Bernskiold Media when developing client specific plugins.",
+	"main": "assets/scripts/src/index.js",
+	"scripts": {
+		"release": "npm install && composer install --no-dev -o && npm run build",
+		"setup": "npm install && composer install && npm run build",
+		"build": "wp-scripts build",
+		"dev": "wp-scripts start",
+		"i18n": "npm run i18n:pot",
+		"i18n:pot": "npm run build && wp i18n make-pot . ./languages/wp-plugin-scaffold.pot --include=\"assets/scripts/dist/,src/\"",
+		"i18n:makejed": "wp i18n make-json languages --no-purge",
+		"check-engines": "wp-scripts check-engines",
+		"check-licenses": "wp-scripts check-licenses",
+		"packages-update": "wp-scripts packages-update"
+	},
+	"author": {
+		"name": "Bernskiold Media",
+		"email": "info@bernskioldmedia.com",
+		"url": "https://bernskioldmedia.com",
+		"role": "developer"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.11.0",
+		"fast-glob": "^3.3.3",
+		"path": "^0.12.7",
+		"replace-in-file-webpack-plugin": "^1.0.6",
+		"webpackbar": "^5.0.2"
+	}
 }
