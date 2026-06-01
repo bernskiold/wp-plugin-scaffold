@@ -23,7 +23,7 @@
 		"role": "developer"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^30.11.0",
+		"@wordpress/scripts": "^30.27.0",
 		"fast-glob": "^3.3.3",
 		"path": "^0.12.7",
 		"replace-in-file-webpack-plugin": "^1.0.6",
